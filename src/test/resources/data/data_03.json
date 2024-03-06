@@ -1,0 +1,47 @@
+{
+  "templateURI": "/aides/api/template-recapitulatif-demande.docx",
+  "targetFolderURI": "/document-collect/test/root/aides/0000001",
+  "outputMimeType": "application/pdf",
+  "dataSources": [
+    {
+      "name": "infosDossier",
+      "mimeType": "JSON",
+      "content": "{\"type\":\"map\",\"label\":\"Votre dossier\",\"value\":{\"infosComplementaires\":{\"type\":\"list\",\"label\":\"Informations complémentaires\",\"value\":[{\"type\":\"map\",\"label\":\"&laquo;  &raquo; &quot; Fiche d&rsquo;identit&eacute; CFA (indicateurs annuels)\",\"value\":{}}]}}}"
+    }
+  ],
+  "cmisProperties": {
+    "cmisaction": [
+      "createDocument"
+    ],
+    "propertyId": [
+      "cmis:name",
+      "cmis:description",
+      "cmis:objectTypeId",
+      "cmis:secondaryObjectTypeIds",
+      "entity:uri",
+      "entity:reference",
+      "entity:referenceAdministrative",
+      "entity:document:originalfilename",
+      "entity:kind",
+      "entity:author",
+      "entity:category",
+      "entity:document:category",
+      "entity:document:nature"
+    ],
+    "propertyValue": [
+      "1708608002770-recapitulatif_depot_F_DEF_CFA_OFA_I.pdf",
+      "recapitulatif_depot_F_DEF_CFA_OFA_I.pdf",
+      "cmis:document",
+      "entity:metadata",
+      "/referentiel-financement/api/tenants/test/demandes-financement/0000001",
+      "0000001",
+      "00185127",
+      "recapitulatif_depot_F_DEF_CFA_OFA_I.pdf",
+      "aide",
+      "John DOE",
+      "recapitulatif",
+      "recapitulatif",
+      ""
+    ]
+  }
+}

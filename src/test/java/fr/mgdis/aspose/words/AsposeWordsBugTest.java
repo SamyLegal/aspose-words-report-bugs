@@ -1,6 +1,6 @@
 package fr.mgdis.aspose.words;
 
-import static io.smallrye.common.constraint.Assert.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import com.adelean.inject.resources.junit.jupiter.GivenJsonResource;
@@ -99,8 +99,31 @@ class AsposeWordsBugTest {
           String text = stripper.getText(pdfDocument);
 
           // Check content
-          assertTrue(text.contains("Aides publiques perçues par l'organisme sur les 3 derniers exercices fiscaux (Dont l'année en cours) - "));
+          assertTrue(text.contains(
+            "Aides publiques perçues par l'organisme sur les 3 derniers exercices fiscaux (Dont l'année en cours) - "));
         }
+      }
+    }
+  }
+
+  @Nested
+  class Bug03 {
+    @Test
+    @DisplayName("should merge a document with template of 'demande-financement recapitulatif' and data with these characters \" « »")
+    void testMergeDocumentWithSpecialCharacters(@GivenJsonResource("/data/data_03.json") JsonNode jsonNode)
+      throws Exception {
+      List<DataSource> dataSources = StreamSupport
+        .stream(jsonNode.get("dataSources").spliterator(), false)
+        .map(dataSourceNode -> new DataSource(dataSourceNode.get("name").asText(), Format.MIMEType.JSON,
+          dataSourceNode.get("content").asText()))
+        .toList();
+
+      // Transformed datasets "datasets" on which the transformation functions have been applied
+      Collection<InputData> transformedDatasets = transformationService.getTransformedDataSet(null, dataSources);
+
+      try (InputStream template = new FileInputStream("src/test/resources/templates/template_03.docx")) {
+        var document = asposeWordsBuilder.buildDocument(template, new DataSourceRoot(transformedDatasets));
+        assertNotNull(document);
       }
     }
   }
