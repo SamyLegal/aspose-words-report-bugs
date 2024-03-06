@@ -39,6 +39,26 @@
       <artifactId>quarkus-arc</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.12.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20231013</version>
+    </dependency>
+
+    <!-- Aspose Words -->
+    <dependency>
+      <groupId>com.aspose</groupId>
+      <artifactId>aspose-words</artifactId>
+      <version>24.2</version>
+      <classifier>jdk17</classifier>
+    </dependency>
+
+    <!-- Test -->
+    <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-junit5</artifactId>
       <scope>test</scope>
@@ -48,22 +68,18 @@
       <artifactId>rest-assured</artifactId>
       <scope>test</scope>
     </dependency>
-
+    <dependency>
+      <groupId>io.hosuaby</groupId>
+      <artifactId>inject-resources-junit-jupiter</artifactId>
+      <version>0.3.3</version>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>org.apache.pdfbox</groupId>
       <artifactId>pdfbox</artifactId>
       <version>2.0.28</version>
       <scope>test</scope>
     </dependency>
-
-    <!-- Aspose Words -->
-    <dependency>
-      <groupId>com.aspose</groupId>
-      <artifactId>aspose-words</artifactId>
-      <version>23.11</version>
-      <classifier>jdk17</classifier>
-    </dependency>
-
   </dependencies>
 
   <build>

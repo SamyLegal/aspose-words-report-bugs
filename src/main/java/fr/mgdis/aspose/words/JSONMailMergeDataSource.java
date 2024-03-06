@@ -5,6 +5,7 @@ import com.aspose.words.ref.Ref;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -27,6 +28,10 @@ public class JSONMailMergeDataSource implements IMailMergeDataSource {
   private JsonNode currentJsonNode;
 
   private JsonNode singleJsonNode;
+
+  public JSONMailMergeDataSource(String tableName, String json) throws IOException {
+    prepare(tableName, mapper.readTree(json));
+  }
 
   public JSONMailMergeDataSource(String tableName, JsonNode jsonNode) {
     prepare(tableName, jsonNode);

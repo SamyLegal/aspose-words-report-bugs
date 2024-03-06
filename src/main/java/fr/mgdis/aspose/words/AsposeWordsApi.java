@@ -17,7 +17,7 @@ public class AsposeWordsApi {
   AsposeWordsBuilder asposeWordsBuilder;
 
   @GET
-  @Path(value = "/document")
+  @Path(value = "/document/bug_01")
   public Response mergeDocument() throws FileNotFoundException {
     try (InputStream template = new FileInputStream("src/test/resources/templates/template_01.docx");) {
       String content = new String(Files.readAllBytes(Paths.get("src/test/resources/data/data_01.json")));

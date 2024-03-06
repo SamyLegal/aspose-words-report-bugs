@@ -1,61 +1,106 @@
 package fr.mgdis.aspose.words;
 
+import static io.smallrye.common.constraint.Assert.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+import com.adelean.inject.resources.junit.jupiter.GivenJsonResource;
+import com.adelean.inject.resources.junit.jupiter.TestWithResources;
+import com.fasterxml.jackson.databind.JsonNode;
+import fr.mgdis.aspose.words.common.TransformationService;
+import fr.mgdis.aspose.words.domain.DataSource;
+import fr.mgdis.aspose.words.domain.Format;
+import fr.mgdis.aspose.words.domain.InputData;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.text.PDFTextStripper;
-import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
-
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.StreamSupport;
+import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.text.PDFTextStripper;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Nested;
+import org.junit.jupiter.api.Test;
 
 @QuarkusTest
+@TestWithResources
 class AsposeWordsBugTest {
 
   @Inject
   AsposeWordsBuilder asposeWordsBuilder;
 
-  @Test
-  @DisplayName("should merge document with old word template and new version of aspose words without throw an exception")
-  void testWordMergeOperationWithAnOldWordTemplate() throws Exception {
-    try (InputStream template = new FileInputStream("src/test/resources/templates/template_01.docx");
-         InputStream data = new FileInputStream("src/test/resources/data/data_01.json")) {
+  @Inject
+  TransformationService transformationService;
 
-      String content = new String(Files.readAllBytes(Paths.get("src/test/resources/data/data_01.json")));
+  @Nested
+  class Bug01 {
+    @Test
+    @DisplayName("should merge document with old word template and new version of aspose words without throw an exception")
+    void testWordMergeOperationWithAnOldWordTemplate() throws Exception {
+      try (InputStream template = new FileInputStream("src/test/resources/templates/template_01.docx")) {
 
-      // IMailMergeDataSourceRoot that contains our data for the merge operation
-      var dataSourceRoot = new JSONMailMergeDataSourceRoot(content);
-      var document = asposeWordsBuilder.buildDocument(template, dataSourceRoot);
+        String content = new String(Files.readAllBytes(Paths.get("src/test/resources/data/data_01.json")));
 
-      try (PDDocument pdfDocument = PDDocument.load(document.toByteArray())) {
-        PDFTextStripper stripper = new PDFTextStripper();
-        String text = stripper.getText(pdfDocument);
+        // IMailMergeDataSourceRoot that contains our data for the merge operation
+        var dataSourceRoot = new JSONMailMergeDataSourceRoot(content);
+        var document = asposeWordsBuilder.buildDocument(template, dataSourceRoot);
 
-        // Check "Domiciliations bancaires"
-        assertTrue(text.contains("Relevé d’identité bancaire : "));
-        assertTrue(text.contains("word-template.docx - 07/12/2023 (19,34Ko)"));
-        assertTrue(text.contains("Note : Mon template word. On peut avoir que un seul document"));
+        try (PDDocument pdfDocument = PDDocument.load(document.toByteArray())) {
+          PDFTextStripper stripper = new PDFTextStripper();
+          String text = stripper.getText(pdfDocument);
 
-        // Check "Pièces"
-        assertTrue(text.contains("Pièces fournies :"));
-        assertTrue(text.contains("Pièce d'identité :"));
-        assertTrue(text.contains("data-sources.pdf - 07/12/2023 (145,65Ko)"));
-        assertTrue(text.contains("Note : Data Sources"));
+          // Check "Domiciliations bancaires"
+          assertTrue(text.contains("Relevé d’identité bancaire : "));
+          assertTrue(text.contains("word-template.docx - 07/12/2023 (19,34Ko)"));
+          assertTrue(text.contains("Note : Mon template word. On peut avoir que un seul document"));
 
-        assertTrue(text.contains("Cahier des charges rédigé par le demandeur : Transmis par envoi postal"));
+          // Check "Pièces"
+          assertTrue(text.contains("Pièces fournies :"));
+          assertTrue(text.contains("Pièce d'identité :"));
+          assertTrue(text.contains("data-sources.pdf - 07/12/2023 (145,65Ko)"));
+          assertTrue(text.contains("Note : Data Sources"));
 
-        assertTrue(text.contains("Propositions et devis des bureaux d'étude consultés :"));
-        assertTrue(text.contains("word-template.docx - 07/12/2023 (19,34Ko)"));
-        assertTrue(text.contains("Note : Mon template word"));
+          assertTrue(text.contains("Cahier des charges rédigé par le demandeur : Transmis par envoi postal"));
 
-        assertTrue(text.contains("Pièce conditionnée au Plan de Financement TTC :"));
-        assertTrue(text.contains("Toute pièce utile à la présentation de votre projet :"));
-        assertTrue(text.contains("depot_TELE_TEST.docx - 07/12/2023 (50,94Ko)"));
+          assertTrue(text.contains("Propositions et devis des bureaux d'étude consultés :"));
+          assertTrue(text.contains("word-template.docx - 07/12/2023 (19,34Ko)"));
+          assertTrue(text.contains("Note : Mon template word"));
+
+          assertTrue(text.contains("Pièce conditionnée au Plan de Financement TTC :"));
+          assertTrue(text.contains("Toute pièce utile à la présentation de votre projet :"));
+          assertTrue(text.contains("depot_TELE_TEST.docx - 07/12/2023 (50,94Ko)"));
+        }
+      }
+    }
+  }
+
+  @Nested
+  class Bug02 {
+    @Test
+    @DisplayName("should merge a document without range error when we call aspose words updateFields method")
+    void testAsposeWordsRangeError(@GivenJsonResource("/data/data_02.json") JsonNode jsonNode) throws Exception {
+      List<DataSource> dataSources = StreamSupport
+        .stream(jsonNode.get("dataSources").spliterator(), false)
+        .map(dataSourceNode -> new DataSource(dataSourceNode.get("name").asText(), Format.MIMEType.JSON,
+          dataSourceNode.get("content").asText()))
+        .toList();
+
+      // Transformed datasets "datasets" on which the transformation functions have been applied
+      Collection<InputData> transformedDatasets = transformationService.getTransformedDataSet(null, dataSources);
+
+      try (InputStream template = new FileInputStream("src/test/resources/templates/template_02.docx")) {
+        var document = asposeWordsBuilder.buildDocument(template, new DataSourceRoot(transformedDatasets));
+
+        try (PDDocument pdfDocument = PDDocument.load(document.toByteArray())) {
+          PDFTextStripper stripper = new PDFTextStripper();
+          String text = stripper.getText(pdfDocument);
+
+          // Check content
+          assertTrue(text.contains("Aides publiques perçues par l'organisme sur les 3 derniers exercices fiscaux (Dont l'année en cours) - "));
+        }
       }
     }
   }
