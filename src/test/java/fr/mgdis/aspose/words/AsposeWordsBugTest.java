@@ -52,8 +52,26 @@ class AsposeWordsBugTest {
           PDFTextStripper stripper = new PDFTextStripper();
           String text = stripper.getText(pdfDocument);
 
-          // Check that the document is correctly generated
-          assertNotNull(text);
+          // Check "Domiciliations bancaires"
+          assertTrue(text.contains("Relevé d’identité bancaire : "));
+
+
+
+          // Check "Pièces"
+          assertTrue(text.contains("Pièces fournies :"));
+          assertTrue(text.contains("Pièce d'identité :"));
+
+
+
+          assertTrue(text.contains("Cahier des charges rédigé par le demandeur : Transmis par envoi postal"));
+
+          assertTrue(text.contains("Propositions et devis des bureaux d'étude consultés :"));
+
+
+
+          assertTrue(text.contains("Pièce conditionnée au Plan de Financement TTC :"));
+
+
         }
       }
     }
