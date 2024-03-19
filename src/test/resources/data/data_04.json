@@ -1,0 +1,2466 @@
+{
+  "fusion": {
+    "pieces": [
+      {
+        "reference": "pieceIdentite",
+        "libelle": {
+          "value": "Pièce d'identité"
+        },
+        "description": {
+          "value": "Copie complète"
+        },
+        "modeTransmission": "DEPOSEE",
+        "fonction": "depot",
+        "obligatoire": false,
+        "documents": [
+          {
+            "id": "/document-collect/test/root?objectId=2d6ed00d-26b7-47c3-9bf7-f81b6e87a901;1.0",
+            "href": "/document-collect/test/root?objectId=2d6ed00d-26b7-47c3-9bf7-f81b6e87a901;1.0&cmisselector=object",
+            "title": "data-sources.pdf",
+            "rel": "cmis",
+            "expand": {
+              "properties": {
+                "alfcmis:nodeRef": {
+                  "id": "alfcmis:nodeRef",
+                  "localName": "nodeRef",
+                  "displayName": "Alfresco Node Ref",
+                  "queryName": "alfcmis:nodeRef",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "workspace://SpacesStore/2d6ed00d-26b7-47c3-9bf7-f81b6e87a901"
+                },
+                "cmis:isImmutable": {
+                  "id": "cmis:isImmutable",
+                  "localName": "isImmutable",
+                  "displayName": "Is Immutable",
+                  "queryName": "cmis:isImmutable",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": false
+                },
+                "cmis:versionLabel": {
+                  "id": "cmis:versionLabel",
+                  "localName": "versionLabel",
+                  "displayName": "Version Label",
+                  "queryName": "cmis:versionLabel",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "1.0"
+                },
+                "cmis:objectTypeId": {
+                  "id": "cmis:objectTypeId",
+                  "localName": "objectTypeId",
+                  "displayName": "Object Type Id",
+                  "queryName": "cmis:objectTypeId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "cmis:document"
+                },
+                "cmis:description": {
+                  "id": "cmis:description",
+                  "localName": "description",
+                  "displayName": "Description",
+                  "queryName": "cmis:description",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "Data Sources"
+                },
+                "cmis:createdBy": {
+                  "id": "cmis:createdBy",
+                  "localName": "createdBy",
+                  "displayName": "Created by",
+                  "queryName": "cmis:createdBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "admin"
+                },
+                "cmis:checkinComment": {
+                  "id": "cmis:checkinComment",
+                  "localName": "checkinComment",
+                  "displayName": "Checkin Comment",
+                  "queryName": "cmis:checkinComment",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "Initial Version"
+                },
+                "cmis:creationDate": {
+                  "id": "cmis:creationDate",
+                  "localName": "creationDate",
+                  "displayName": "Creation Date",
+                  "queryName": "cmis:creationDate",
+                  "type": "datetime",
+                  "cardinality": "single",
+                  "value": 1701935293026
+                },
+                "cmis:isMajorVersion": {
+                  "id": "cmis:isMajorVersion",
+                  "localName": "isMajorVersion",
+                  "displayName": "Is Major Version",
+                  "queryName": "cmis:isMajorVersion",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": true
+                },
+                "cmis:contentStreamFileName": {
+                  "id": "cmis:contentStreamFileName",
+                  "localName": "contentStreamFileName",
+                  "displayName": "Content Stream Filename",
+                  "queryName": "cmis:contentStreamFileName",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "e0f479cb-c15d-4602-8ea8-3ed6fc3447d4_data-sources.pdf"
+                },
+                "cmis:name": {
+                  "id": "cmis:name",
+                  "localName": "name",
+                  "displayName": "Name",
+                  "queryName": "cmis:name",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "e0f479cb-c15d-4602-8ea8-3ed6fc3447d4_data-sources.pdf"
+                },
+                "cmis:isLatestVersion": {
+                  "id": "cmis:isLatestVersion",
+                  "localName": "isLatestVersion",
+                  "displayName": "Is Latest Version",
+                  "queryName": "cmis:isLatestVersion",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": true
+                },
+                "cmis:lastModificationDate": {
+                  "id": "cmis:lastModificationDate",
+                  "localName": "lastModificationDate",
+                  "displayName": "Last Modified Date",
+                  "queryName": "cmis:lastModificationDate",
+                  "type": "datetime",
+                  "cardinality": "single",
+                  "value": 1701935298910
+                },
+                "cmis:contentStreamLength": {
+                  "id": "cmis:contentStreamLength",
+                  "localName": "contentStreamLength",
+                  "displayName": "Content Stream Length",
+                  "queryName": "cmis:contentStreamLength",
+                  "type": "integer",
+                  "cardinality": "single",
+                  "value": 145653
+                },
+                "cmis:objectId": {
+                  "id": "cmis:objectId",
+                  "localName": "objectId",
+                  "displayName": "Object Id",
+                  "queryName": "cmis:objectId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "2d6ed00d-26b7-47c3-9bf7-f81b6e87a901;1.0"
+                },
+                "cmis:lastModifiedBy": {
+                  "id": "cmis:lastModifiedBy",
+                  "localName": "lastModifiedBy",
+                  "displayName": "Last Modified By",
+                  "queryName": "cmis:lastModifiedBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "admin"
+                },
+                "cmis:secondaryObjectTypeIds": {
+                  "id": "cmis:secondaryObjectTypeIds",
+                  "localName": "secondaryObjectTypeIds",
+                  "displayName": "Secondary Object Type Ids",
+                  "queryName": "cmis:secondaryObjectTypeIds",
+                  "type": "id",
+                  "cardinality": "multi",
+                  "value": [
+                    "P:entity:metadata",
+                    "P:cm:titled",
+                    "P:sys:localized"
+                  ]
+                },
+                "cmis:contentStreamId": {
+                  "id": "cmis:contentStreamId",
+                  "localName": "contentStreamId",
+                  "displayName": "Content Stream Id",
+                  "queryName": "cmis:contentStreamId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "store://2023/12/7/7/48/41b59b44-6cfe-437a-94d5-06266afb33de.bin"
+                },
+                "cmis:contentStreamMimeType": {
+                  "id": "cmis:contentStreamMimeType",
+                  "localName": "contentStreamMimeType",
+                  "displayName": "Content Stream MIME Type",
+                  "queryName": "cmis:contentStreamMimeType",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "application/pdf"
+                },
+                "cmis:baseTypeId": {
+                  "id": "cmis:baseTypeId",
+                  "localName": "baseTypeId",
+                  "displayName": "Base Type Id",
+                  "queryName": "cmis:baseTypeId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "cmis:document"
+                },
+                "cmis:changeToken": {
+                  "id": "cmis:changeToken",
+                  "localName": "changeToken",
+                  "displayName": "Change token",
+                  "queryName": "cmis:changeToken",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cmis:isPrivateWorkingCopy": {
+                  "id": "cmis:isPrivateWorkingCopy",
+                  "localName": "isPrivateWorkingCopy",
+                  "displayName": "Is private working copy",
+                  "queryName": "cmis:isPrivateWorkingCopy",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": false
+                },
+                "cmis:versionSeriesCheckedOutBy": {
+                  "id": "cmis:versionSeriesCheckedOutBy",
+                  "localName": "versionSeriesCheckedOutBy",
+                  "displayName": "Version Series Checked Out By",
+                  "queryName": "cmis:versionSeriesCheckedOutBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cmis:isVersionSeriesCheckedOut": {
+                  "id": "cmis:isVersionSeriesCheckedOut",
+                  "localName": "isVersionSeriesCheckedOut",
+                  "displayName": "Is Version Series Checked Out",
+                  "queryName": "cmis:isVersionSeriesCheckedOut",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": false
+                },
+                "cmis:versionSeriesId": {
+                  "id": "cmis:versionSeriesId",
+                  "localName": "versionSeriesId",
+                  "displayName": "Version series id",
+                  "queryName": "cmis:versionSeriesId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "2d6ed00d-26b7-47c3-9bf7-f81b6e87a901"
+                },
+                "cmis:isLatestMajorVersion": {
+                  "id": "cmis:isLatestMajorVersion",
+                  "localName": "isLatestMajorVersion",
+                  "displayName": "Is Latest Major Version",
+                  "queryName": "cmis:isLatestMajorVersion",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": true
+                },
+                "cmis:versionSeriesCheckedOutId": {
+                  "id": "cmis:versionSeriesCheckedOutId",
+                  "localName": "versionSeriesCheckedOutId",
+                  "displayName": "Version Series Checked Out Id",
+                  "queryName": "cmis:versionSeriesCheckedOutId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:category": {
+                  "id": "entity:category",
+                  "localName": "category",
+                  "displayName": "DEPRECATED: use entity:document:category instead",
+                  "queryName": "entity:category",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "pieceIdentite"
+                },
+                "entity:document:date": {
+                  "id": "entity:document:date",
+                  "localName": "document:date",
+                  "displayName": "entity:document:date",
+                  "queryName": "entity:document:date",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "2023-12-07T07:48:12.711Z"
+                },
+                "entity:originalfilename": {
+                  "id": "entity:originalfilename",
+                  "localName": "originalfilename",
+                  "displayName": "DEPRECATED: use entity:document:originalfilname instead\n\t\t\t\t\t",
+                  "queryName": "entity:originalfilename",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "data-sources.pdf"
+                },
+                "entity:document:category": {
+                  "id": "entity:document:category",
+                  "localName": "document:category",
+                  "displayName": "entity:document:category",
+                  "queryName": "entity:document:category",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "pieceIdentite"
+                },
+                "entity:author": {
+                  "id": "entity:author",
+                  "localName": "author",
+                  "displayName": "entity:author",
+                  "queryName": "entity:author",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "John Doe"
+                },
+                "entity:document:generatedBy": {
+                  "id": "entity:document:generatedBy",
+                  "localName": "document:generatedBy",
+                  "displayName": "entity:document:generatedBy",
+                  "queryName": "entity:document:generatedBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:reference": {
+                  "id": "entity:reference",
+                  "localName": "reference",
+                  "displayName": "entity:reference",
+                  "queryName": "entity:reference",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "RebO9u38b"
+                },
+                "entity:document:formsCommonValues": {
+                  "id": "entity:document:formsCommonValues",
+                  "localName": "document:formsCommonValues",
+                  "displayName": "entity:document:formsCommonValues",
+                  "queryName": "entity:document:formsCommonValues",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:signature:status": {
+                  "id": "entity:signature:status",
+                  "localName": "signature:status",
+                  "displayName": "entity:signature:status",
+                  "queryName": "entity:signature:status",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:uri": {
+                  "id": "entity:uri",
+                  "localName": "uri",
+                  "displayName": "entity:uri",
+                  "queryName": "entity:uri",
+                  "type": "string",
+                  "cardinality": "single"
+                },
+                "entity:document:nature": {
+                  "id": "entity:document:nature",
+                  "localName": "document:nature",
+                  "displayName": "entity:document:nature",
+                  "queryName": "entity:document:nature",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": ""
+                },
+                "entity:kind": {
+                  "id": "entity:kind",
+                  "localName": "kind",
+                  "displayName": "entity:kind",
+                  "queryName": "entity:kind",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "aide"
+                },
+                "entity:origin": {
+                  "id": "entity:origin",
+                  "localName": "origin",
+                  "displayName": "entity:origin",
+                  "queryName": "entity:origin",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:originalfilename": {
+                  "id": "entity:document:originalfilename",
+                  "localName": "document:originalfilename",
+                  "displayName": "entity:document:originalfilename",
+                  "queryName": "entity:document:originalfilename",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "data-sources.pdf"
+                },
+                "entity:authorId": {
+                  "id": "entity:authorId",
+                  "localName": "authorId",
+                  "displayName": "entity:authorId",
+                  "queryName": "entity:authorId",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "/account-management/test-demandeurs/users/john-d"
+                },
+                "entity:document:fonction": {
+                  "id": "entity:document:fonction",
+                  "localName": "document:fonction",
+                  "displayName": "entity:document:fonction",
+                  "queryName": "entity:document:fonction",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:originalId": {
+                  "id": "entity:originalId",
+                  "localName": "originalId",
+                  "displayName": "entity:originalId",
+                  "queryName": "entity:originalId",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:reportingEntityUrl": {
+                  "id": "entity:document:reportingEntityUrl",
+                  "localName": "document:reportingEntityUrl",
+                  "displayName": "entity:document:reportingEntityUrl",
+                  "queryName": "entity:document:reportingEntityUrl",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:protectedBy": {
+                  "id": "entity:document:protectedBy",
+                  "localName": "document:protectedBy",
+                  "displayName": "entity:document:protectedBy",
+                  "queryName": "entity:document:protectedBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:referenceAdministrative": {
+                  "id": "entity:referenceAdministrative",
+                  "localName": "referenceAdministrative",
+                  "displayName": "entity:referenceAdministrative",
+                  "queryName": "entity:referenceAdministrative",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": ""
+                },
+                "entity:document:reference": {
+                  "id": "entity:document:reference",
+                  "localName": "document:reference",
+                  "displayName": "DEPRECATED - Use entity:reference - Reference of the related document\n\t\t\t\t\t",
+                  "queryName": "entity:document:reference",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:datevalidity": {
+                  "id": "entity:document:datevalidity",
+                  "localName": "document:datevalidity",
+                  "displayName": "entity:document:datevalidity",
+                  "queryName": "entity:document:datevalidity",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cm:title": {
+                  "id": "cm:title",
+                  "localName": "title",
+                  "displayName": "Title",
+                  "queryName": "cm:title",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cm:description": {
+                  "id": "cm:description",
+                  "localName": "description",
+                  "displayName": "Description",
+                  "queryName": "cm:description",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "Data Sources"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "reference": "cahierCharges",
+        "libelle": {
+          "value": "Cahier des charges rédigé par le demandeur"
+        },
+        "description": {
+          "value": "Objectifs, objets, résultats attendus, moyens mis à disposition du consultant"
+        },
+        "modeTransmission": "ENVOIEPOSTAL",
+        "fonction": "depot",
+        "obligatoire": true
+      },
+      {
+        "reference": "devisBureauxTest",
+        "libelle": {
+          "value": "Propositions et devis des bureaux d'étude consultés"
+        },
+        "description": {
+          "value": ""
+        },
+        "modeTransmission": "DEPOSEE",
+        "fonction": "depot",
+        "obligatoire": false,
+        "documents": [
+          {
+            "id": "/document-collect/test/root?objectId=fec1e170-b48a-4836-91d5-d19893d2e351;1.0",
+            "href": "/document-collect/test/root?objectId=fec1e170-b48a-4836-91d5-d19893d2e351;1.0&cmisselector=object",
+            "title": "word-template.docx",
+            "rel": "cmis",
+            "expand": {
+              "properties": {
+                "alfcmis:nodeRef": {
+                  "id": "alfcmis:nodeRef",
+                  "localName": "nodeRef",
+                  "displayName": "Alfresco Node Ref",
+                  "queryName": "alfcmis:nodeRef",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "workspace://SpacesStore/fec1e170-b48a-4836-91d5-d19893d2e351"
+                },
+                "cmis:isImmutable": {
+                  "id": "cmis:isImmutable",
+                  "localName": "isImmutable",
+                  "displayName": "Is Immutable",
+                  "queryName": "cmis:isImmutable",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": false
+                },
+                "cmis:versionLabel": {
+                  "id": "cmis:versionLabel",
+                  "localName": "versionLabel",
+                  "displayName": "Version Label",
+                  "queryName": "cmis:versionLabel",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "1.0"
+                },
+                "cmis:objectTypeId": {
+                  "id": "cmis:objectTypeId",
+                  "localName": "objectTypeId",
+                  "displayName": "Object Type Id",
+                  "queryName": "cmis:objectTypeId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "cmis:document"
+                },
+                "cmis:description": {
+                  "id": "cmis:description",
+                  "localName": "description",
+                  "displayName": "Description",
+                  "queryName": "cmis:description",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "Mon template word"
+                },
+                "cmis:createdBy": {
+                  "id": "cmis:createdBy",
+                  "localName": "createdBy",
+                  "displayName": "Created by",
+                  "queryName": "cmis:createdBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "admin"
+                },
+                "cmis:checkinComment": {
+                  "id": "cmis:checkinComment",
+                  "localName": "checkinComment",
+                  "displayName": "Checkin Comment",
+                  "queryName": "cmis:checkinComment",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "Initial Version"
+                },
+                "cmis:creationDate": {
+                  "id": "cmis:creationDate",
+                  "localName": "creationDate",
+                  "displayName": "Creation Date",
+                  "queryName": "cmis:creationDate",
+                  "type": "datetime",
+                  "cardinality": "single",
+                  "value": 1701935303253
+                },
+                "cmis:isMajorVersion": {
+                  "id": "cmis:isMajorVersion",
+                  "localName": "isMajorVersion",
+                  "displayName": "Is Major Version",
+                  "queryName": "cmis:isMajorVersion",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": true
+                },
+                "cmis:contentStreamFileName": {
+                  "id": "cmis:contentStreamFileName",
+                  "localName": "contentStreamFileName",
+                  "displayName": "Content Stream Filename",
+                  "queryName": "cmis:contentStreamFileName",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "2fa1dadb-5a6a-4740-e6bf-3f6f2a5883b6_word-template.docx"
+                },
+                "cmis:name": {
+                  "id": "cmis:name",
+                  "localName": "name",
+                  "displayName": "Name",
+                  "queryName": "cmis:name",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "2fa1dadb-5a6a-4740-e6bf-3f6f2a5883b6_word-template.docx"
+                },
+                "cmis:isLatestVersion": {
+                  "id": "cmis:isLatestVersion",
+                  "localName": "isLatestVersion",
+                  "displayName": "Is Latest Version",
+                  "queryName": "cmis:isLatestVersion",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": true
+                },
+                "cmis:lastModificationDate": {
+                  "id": "cmis:lastModificationDate",
+                  "localName": "lastModificationDate",
+                  "displayName": "Last Modified Date",
+                  "queryName": "cmis:lastModificationDate",
+                  "type": "datetime",
+                  "cardinality": "single",
+                  "value": 1701935308316
+                },
+                "cmis:contentStreamLength": {
+                  "id": "cmis:contentStreamLength",
+                  "localName": "contentStreamLength",
+                  "displayName": "Content Stream Length",
+                  "queryName": "cmis:contentStreamLength",
+                  "type": "integer",
+                  "cardinality": "single",
+                  "value": 19340
+                },
+                "cmis:objectId": {
+                  "id": "cmis:objectId",
+                  "localName": "objectId",
+                  "displayName": "Object Id",
+                  "queryName": "cmis:objectId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "fec1e170-b48a-4836-91d5-d19893d2e351;1.0"
+                },
+                "cmis:lastModifiedBy": {
+                  "id": "cmis:lastModifiedBy",
+                  "localName": "lastModifiedBy",
+                  "displayName": "Last Modified By",
+                  "queryName": "cmis:lastModifiedBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "admin"
+                },
+                "cmis:secondaryObjectTypeIds": {
+                  "id": "cmis:secondaryObjectTypeIds",
+                  "localName": "secondaryObjectTypeIds",
+                  "displayName": "Secondary Object Type Ids",
+                  "queryName": "cmis:secondaryObjectTypeIds",
+                  "type": "id",
+                  "cardinality": "multi",
+                  "value": [
+                    "P:entity:metadata",
+                    "P:cm:titled",
+                    "P:sys:localized"
+                  ]
+                },
+                "cmis:contentStreamId": {
+                  "id": "cmis:contentStreamId",
+                  "localName": "contentStreamId",
+                  "displayName": "Content Stream Id",
+                  "queryName": "cmis:contentStreamId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "store://2023/12/7/7/48/e7640f62-a153-457c-8e21-cd7949daeca9.bin"
+                },
+                "cmis:contentStreamMimeType": {
+                  "id": "cmis:contentStreamMimeType",
+                  "localName": "contentStreamMimeType",
+                  "displayName": "Content Stream MIME Type",
+                  "queryName": "cmis:contentStreamMimeType",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                },
+                "cmis:baseTypeId": {
+                  "id": "cmis:baseTypeId",
+                  "localName": "baseTypeId",
+                  "displayName": "Base Type Id",
+                  "queryName": "cmis:baseTypeId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "cmis:document"
+                },
+                "cmis:changeToken": {
+                  "id": "cmis:changeToken",
+                  "localName": "changeToken",
+                  "displayName": "Change token",
+                  "queryName": "cmis:changeToken",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cmis:isPrivateWorkingCopy": {
+                  "id": "cmis:isPrivateWorkingCopy",
+                  "localName": "isPrivateWorkingCopy",
+                  "displayName": "Is private working copy",
+                  "queryName": "cmis:isPrivateWorkingCopy",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": false
+                },
+                "cmis:versionSeriesCheckedOutBy": {
+                  "id": "cmis:versionSeriesCheckedOutBy",
+                  "localName": "versionSeriesCheckedOutBy",
+                  "displayName": "Version Series Checked Out By",
+                  "queryName": "cmis:versionSeriesCheckedOutBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cmis:isVersionSeriesCheckedOut": {
+                  "id": "cmis:isVersionSeriesCheckedOut",
+                  "localName": "isVersionSeriesCheckedOut",
+                  "displayName": "Is Version Series Checked Out",
+                  "queryName": "cmis:isVersionSeriesCheckedOut",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": false
+                },
+                "cmis:versionSeriesId": {
+                  "id": "cmis:versionSeriesId",
+                  "localName": "versionSeriesId",
+                  "displayName": "Version series id",
+                  "queryName": "cmis:versionSeriesId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "fec1e170-b48a-4836-91d5-d19893d2e351"
+                },
+                "cmis:isLatestMajorVersion": {
+                  "id": "cmis:isLatestMajorVersion",
+                  "localName": "isLatestMajorVersion",
+                  "displayName": "Is Latest Major Version",
+                  "queryName": "cmis:isLatestMajorVersion",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": true
+                },
+                "cmis:versionSeriesCheckedOutId": {
+                  "id": "cmis:versionSeriesCheckedOutId",
+                  "localName": "versionSeriesCheckedOutId",
+                  "displayName": "Version Series Checked Out Id",
+                  "queryName": "cmis:versionSeriesCheckedOutId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:category": {
+                  "id": "entity:category",
+                  "localName": "category",
+                  "displayName": "DEPRECATED: use entity:document:category instead",
+                  "queryName": "entity:category",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "devisBureauxTest"
+                },
+                "entity:document:date": {
+                  "id": "entity:document:date",
+                  "localName": "document:date",
+                  "displayName": "entity:document:date",
+                  "queryName": "entity:document:date",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "2023-12-07T07:48:22.993Z"
+                },
+                "entity:originalfilename": {
+                  "id": "entity:originalfilename",
+                  "localName": "originalfilename",
+                  "displayName": "DEPRECATED: use entity:document:originalfilname instead\n\t\t\t\t\t",
+                  "queryName": "entity:originalfilename",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "word-template.docx"
+                },
+                "entity:document:category": {
+                  "id": "entity:document:category",
+                  "localName": "document:category",
+                  "displayName": "entity:document:category",
+                  "queryName": "entity:document:category",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "devisBureauxTest"
+                },
+                "entity:author": {
+                  "id": "entity:author",
+                  "localName": "author",
+                  "displayName": "entity:author",
+                  "queryName": "entity:author",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "John Doe"
+                },
+                "entity:document:generatedBy": {
+                  "id": "entity:document:generatedBy",
+                  "localName": "document:generatedBy",
+                  "displayName": "entity:document:generatedBy",
+                  "queryName": "entity:document:generatedBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:reference": {
+                  "id": "entity:reference",
+                  "localName": "reference",
+                  "displayName": "entity:reference",
+                  "queryName": "entity:reference",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "RebO9u38b"
+                },
+                "entity:document:formsCommonValues": {
+                  "id": "entity:document:formsCommonValues",
+                  "localName": "document:formsCommonValues",
+                  "displayName": "entity:document:formsCommonValues",
+                  "queryName": "entity:document:formsCommonValues",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:signature:status": {
+                  "id": "entity:signature:status",
+                  "localName": "signature:status",
+                  "displayName": "entity:signature:status",
+                  "queryName": "entity:signature:status",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:uri": {
+                  "id": "entity:uri",
+                  "localName": "uri",
+                  "displayName": "entity:uri",
+                  "queryName": "entity:uri",
+                  "type": "string",
+                  "cardinality": "single"
+                },
+                "entity:document:nature": {
+                  "id": "entity:document:nature",
+                  "localName": "document:nature",
+                  "displayName": "entity:document:nature",
+                  "queryName": "entity:document:nature",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": ""
+                },
+                "entity:kind": {
+                  "id": "entity:kind",
+                  "localName": "kind",
+                  "displayName": "entity:kind",
+                  "queryName": "entity:kind",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "aide"
+                },
+                "entity:origin": {
+                  "id": "entity:origin",
+                  "localName": "origin",
+                  "displayName": "entity:origin",
+                  "queryName": "entity:origin",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:originalfilename": {
+                  "id": "entity:document:originalfilename",
+                  "localName": "document:originalfilename",
+                  "displayName": "entity:document:originalfilename",
+                  "queryName": "entity:document:originalfilename",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "word-template.docx"
+                },
+                "entity:authorId": {
+                  "id": "entity:authorId",
+                  "localName": "authorId",
+                  "displayName": "entity:authorId",
+                  "queryName": "entity:authorId",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "/account-management/test-demandeurs/users/john-d"
+                },
+                "entity:document:fonction": {
+                  "id": "entity:document:fonction",
+                  "localName": "document:fonction",
+                  "displayName": "entity:document:fonction",
+                  "queryName": "entity:document:fonction",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:originalId": {
+                  "id": "entity:originalId",
+                  "localName": "originalId",
+                  "displayName": "entity:originalId",
+                  "queryName": "entity:originalId",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:reportingEntityUrl": {
+                  "id": "entity:document:reportingEntityUrl",
+                  "localName": "document:reportingEntityUrl",
+                  "displayName": "entity:document:reportingEntityUrl",
+                  "queryName": "entity:document:reportingEntityUrl",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:protectedBy": {
+                  "id": "entity:document:protectedBy",
+                  "localName": "document:protectedBy",
+                  "displayName": "entity:document:protectedBy",
+                  "queryName": "entity:document:protectedBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:referenceAdministrative": {
+                  "id": "entity:referenceAdministrative",
+                  "localName": "referenceAdministrative",
+                  "displayName": "entity:referenceAdministrative",
+                  "queryName": "entity:referenceAdministrative",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": ""
+                },
+                "entity:document:reference": {
+                  "id": "entity:document:reference",
+                  "localName": "document:reference",
+                  "displayName": "DEPRECATED - Use entity:reference - Reference of the related document\n\t\t\t\t\t",
+                  "queryName": "entity:document:reference",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:datevalidity": {
+                  "id": "entity:document:datevalidity",
+                  "localName": "document:datevalidity",
+                  "displayName": "entity:document:datevalidity",
+                  "queryName": "entity:document:datevalidity",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cm:title": {
+                  "id": "cm:title",
+                  "localName": "title",
+                  "displayName": "Title",
+                  "queryName": "cm:title",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cm:description": {
+                  "id": "cm:description",
+                  "localName": "description",
+                  "displayName": "Description",
+                  "queryName": "cm:description",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "Mon template word"
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "reference": "piecettc",
+        "libelle": {
+          "value": "Pièce conditionnée au Plan de Financement TTC"
+        },
+        "modeTransmission": "DEPOSEE",
+        "fonction": "depot",
+        "obligatoire": false
+      },
+      {
+        "reference": "autrePiece",
+        "libelle": {
+          "value": "Toute pièce utile à la présentation de votre projet"
+        },
+        "description": {
+          "value": ""
+        },
+        "modeTransmission": "DEPOSEE",
+        "fonction": "depot",
+        "obligatoire": false,
+        "obligatoireSurRecevabilite": true,
+        "documents": [
+          {
+            "id": "/document-collect/test/root?objectId=bd37754c-224c-42ea-9956-c3ca8eb1ad56;1.0",
+            "href": "/document-collect/test/root?objectId=bd37754c-224c-42ea-9956-c3ca8eb1ad56;1.0&cmisselector=object",
+            "title": "depot_TELE_TEST.docx",
+            "rel": "cmis",
+            "expand": {
+              "properties": {
+                "alfcmis:nodeRef": {
+                  "id": "alfcmis:nodeRef",
+                  "localName": "nodeRef",
+                  "displayName": "Alfresco Node Ref",
+                  "queryName": "alfcmis:nodeRef",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "workspace://SpacesStore/bd37754c-224c-42ea-9956-c3ca8eb1ad56"
+                },
+                "cmis:isImmutable": {
+                  "id": "cmis:isImmutable",
+                  "localName": "isImmutable",
+                  "displayName": "Is Immutable",
+                  "queryName": "cmis:isImmutable",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": false
+                },
+                "cmis:versionLabel": {
+                  "id": "cmis:versionLabel",
+                  "localName": "versionLabel",
+                  "displayName": "Version Label",
+                  "queryName": "cmis:versionLabel",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "1.0"
+                },
+                "cmis:objectTypeId": {
+                  "id": "cmis:objectTypeId",
+                  "localName": "objectTypeId",
+                  "displayName": "Object Type Id",
+                  "queryName": "cmis:objectTypeId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "cmis:document"
+                },
+                "cmis:description": {
+                  "id": "cmis:description",
+                  "localName": "description",
+                  "displayName": "Description",
+                  "queryName": "cmis:description",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cmis:createdBy": {
+                  "id": "cmis:createdBy",
+                  "localName": "createdBy",
+                  "displayName": "Created by",
+                  "queryName": "cmis:createdBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "admin"
+                },
+                "cmis:checkinComment": {
+                  "id": "cmis:checkinComment",
+                  "localName": "checkinComment",
+                  "displayName": "Checkin Comment",
+                  "queryName": "cmis:checkinComment",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "Initial Version"
+                },
+                "cmis:creationDate": {
+                  "id": "cmis:creationDate",
+                  "localName": "creationDate",
+                  "displayName": "Creation Date",
+                  "queryName": "cmis:creationDate",
+                  "type": "datetime",
+                  "cardinality": "single",
+                  "value": 1701935313763
+                },
+                "cmis:isMajorVersion": {
+                  "id": "cmis:isMajorVersion",
+                  "localName": "isMajorVersion",
+                  "displayName": "Is Major Version",
+                  "queryName": "cmis:isMajorVersion",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": true
+                },
+                "cmis:contentStreamFileName": {
+                  "id": "cmis:contentStreamFileName",
+                  "localName": "contentStreamFileName",
+                  "displayName": "Content Stream Filename",
+                  "queryName": "cmis:contentStreamFileName",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "f53204d7-dc26-4c1a-b836-f7dab090b6a8_depot_TELE_TEST.docx"
+                },
+                "cmis:name": {
+                  "id": "cmis:name",
+                  "localName": "name",
+                  "displayName": "Name",
+                  "queryName": "cmis:name",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "f53204d7-dc26-4c1a-b836-f7dab090b6a8_depot_TELE_TEST.docx"
+                },
+                "cmis:isLatestVersion": {
+                  "id": "cmis:isLatestVersion",
+                  "localName": "isLatestVersion",
+                  "displayName": "Is Latest Version",
+                  "queryName": "cmis:isLatestVersion",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": true
+                },
+                "cmis:lastModificationDate": {
+                  "id": "cmis:lastModificationDate",
+                  "localName": "lastModificationDate",
+                  "displayName": "Last Modified Date",
+                  "queryName": "cmis:lastModificationDate",
+                  "type": "datetime",
+                  "cardinality": "single",
+                  "value": 1701935313763
+                },
+                "cmis:contentStreamLength": {
+                  "id": "cmis:contentStreamLength",
+                  "localName": "contentStreamLength",
+                  "displayName": "Content Stream Length",
+                  "queryName": "cmis:contentStreamLength",
+                  "type": "integer",
+                  "cardinality": "single",
+                  "value": 50935
+                },
+                "cmis:objectId": {
+                  "id": "cmis:objectId",
+                  "localName": "objectId",
+                  "displayName": "Object Id",
+                  "queryName": "cmis:objectId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "bd37754c-224c-42ea-9956-c3ca8eb1ad56;1.0"
+                },
+                "cmis:lastModifiedBy": {
+                  "id": "cmis:lastModifiedBy",
+                  "localName": "lastModifiedBy",
+                  "displayName": "Last Modified By",
+                  "queryName": "cmis:lastModifiedBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "admin"
+                },
+                "cmis:secondaryObjectTypeIds": {
+                  "id": "cmis:secondaryObjectTypeIds",
+                  "localName": "secondaryObjectTypeIds",
+                  "displayName": "Secondary Object Type Ids",
+                  "queryName": "cmis:secondaryObjectTypeIds",
+                  "type": "id",
+                  "cardinality": "multi",
+                  "value": [
+                    "P:entity:metadata",
+                    "P:sys:localized"
+                  ]
+                },
+                "cmis:contentStreamId": {
+                  "id": "cmis:contentStreamId",
+                  "localName": "contentStreamId",
+                  "displayName": "Content Stream Id",
+                  "queryName": "cmis:contentStreamId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "store://2023/12/7/7/48/64f62beb-ec83-45e0-8ddf-4b8cf3a8c594.bin"
+                },
+                "cmis:contentStreamMimeType": {
+                  "id": "cmis:contentStreamMimeType",
+                  "localName": "contentStreamMimeType",
+                  "displayName": "Content Stream MIME Type",
+                  "queryName": "cmis:contentStreamMimeType",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                },
+                "cmis:baseTypeId": {
+                  "id": "cmis:baseTypeId",
+                  "localName": "baseTypeId",
+                  "displayName": "Base Type Id",
+                  "queryName": "cmis:baseTypeId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "cmis:document"
+                },
+                "cmis:changeToken": {
+                  "id": "cmis:changeToken",
+                  "localName": "changeToken",
+                  "displayName": "Change token",
+                  "queryName": "cmis:changeToken",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cmis:isPrivateWorkingCopy": {
+                  "id": "cmis:isPrivateWorkingCopy",
+                  "localName": "isPrivateWorkingCopy",
+                  "displayName": "Is private working copy",
+                  "queryName": "cmis:isPrivateWorkingCopy",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": false
+                },
+                "cmis:versionSeriesCheckedOutBy": {
+                  "id": "cmis:versionSeriesCheckedOutBy",
+                  "localName": "versionSeriesCheckedOutBy",
+                  "displayName": "Version Series Checked Out By",
+                  "queryName": "cmis:versionSeriesCheckedOutBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cmis:isVersionSeriesCheckedOut": {
+                  "id": "cmis:isVersionSeriesCheckedOut",
+                  "localName": "isVersionSeriesCheckedOut",
+                  "displayName": "Is Version Series Checked Out",
+                  "queryName": "cmis:isVersionSeriesCheckedOut",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": false
+                },
+                "cmis:versionSeriesId": {
+                  "id": "cmis:versionSeriesId",
+                  "localName": "versionSeriesId",
+                  "displayName": "Version series id",
+                  "queryName": "cmis:versionSeriesId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "bd37754c-224c-42ea-9956-c3ca8eb1ad56"
+                },
+                "cmis:isLatestMajorVersion": {
+                  "id": "cmis:isLatestMajorVersion",
+                  "localName": "isLatestMajorVersion",
+                  "displayName": "Is Latest Major Version",
+                  "queryName": "cmis:isLatestMajorVersion",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": true
+                },
+                "cmis:versionSeriesCheckedOutId": {
+                  "id": "cmis:versionSeriesCheckedOutId",
+                  "localName": "versionSeriesCheckedOutId",
+                  "displayName": "Version Series Checked Out Id",
+                  "queryName": "cmis:versionSeriesCheckedOutId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:category": {
+                  "id": "entity:category",
+                  "localName": "category",
+                  "displayName": "DEPRECATED: use entity:document:category instead",
+                  "queryName": "entity:category",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "autrePiece"
+                },
+                "entity:document:date": {
+                  "id": "entity:document:date",
+                  "localName": "document:date",
+                  "displayName": "entity:document:date",
+                  "queryName": "entity:document:date",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "2023-12-07T07:48:33.469Z"
+                },
+                "entity:originalfilename": {
+                  "id": "entity:originalfilename",
+                  "localName": "originalfilename",
+                  "displayName": "DEPRECATED: use entity:document:originalfilname instead\n\t\t\t\t\t",
+                  "queryName": "entity:originalfilename",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "depot_TELE_TEST.docx"
+                },
+                "entity:document:category": {
+                  "id": "entity:document:category",
+                  "localName": "document:category",
+                  "displayName": "entity:document:category",
+                  "queryName": "entity:document:category",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "autrePiece"
+                },
+                "entity:author": {
+                  "id": "entity:author",
+                  "localName": "author",
+                  "displayName": "entity:author",
+                  "queryName": "entity:author",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "John Doe"
+                },
+                "entity:document:generatedBy": {
+                  "id": "entity:document:generatedBy",
+                  "localName": "document:generatedBy",
+                  "displayName": "entity:document:generatedBy",
+                  "queryName": "entity:document:generatedBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:reference": {
+                  "id": "entity:reference",
+                  "localName": "reference",
+                  "displayName": "entity:reference",
+                  "queryName": "entity:reference",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "RebO9u38b"
+                },
+                "entity:document:formsCommonValues": {
+                  "id": "entity:document:formsCommonValues",
+                  "localName": "document:formsCommonValues",
+                  "displayName": "entity:document:formsCommonValues",
+                  "queryName": "entity:document:formsCommonValues",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:signature:status": {
+                  "id": "entity:signature:status",
+                  "localName": "signature:status",
+                  "displayName": "entity:signature:status",
+                  "queryName": "entity:signature:status",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:uri": {
+                  "id": "entity:uri",
+                  "localName": "uri",
+                  "displayName": "entity:uri",
+                  "queryName": "entity:uri",
+                  "type": "string",
+                  "cardinality": "single"
+                },
+                "entity:document:nature": {
+                  "id": "entity:document:nature",
+                  "localName": "document:nature",
+                  "displayName": "entity:document:nature",
+                  "queryName": "entity:document:nature",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": ""
+                },
+                "entity:kind": {
+                  "id": "entity:kind",
+                  "localName": "kind",
+                  "displayName": "entity:kind",
+                  "queryName": "entity:kind",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "aide"
+                },
+                "entity:origin": {
+                  "id": "entity:origin",
+                  "localName": "origin",
+                  "displayName": "entity:origin",
+                  "queryName": "entity:origin",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:originalfilename": {
+                  "id": "entity:document:originalfilename",
+                  "localName": "document:originalfilename",
+                  "displayName": "entity:document:originalfilename",
+                  "queryName": "entity:document:originalfilename",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "depot_TELE_TEST.docx"
+                },
+                "entity:authorId": {
+                  "id": "entity:authorId",
+                  "localName": "authorId",
+                  "displayName": "entity:authorId",
+                  "queryName": "entity:authorId",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "/account-management/test-demandeurs/users/john-d"
+                },
+                "entity:document:fonction": {
+                  "id": "entity:document:fonction",
+                  "localName": "document:fonction",
+                  "displayName": "entity:document:fonction",
+                  "queryName": "entity:document:fonction",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:originalId": {
+                  "id": "entity:originalId",
+                  "localName": "originalId",
+                  "displayName": "entity:originalId",
+                  "queryName": "entity:originalId",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:reportingEntityUrl": {
+                  "id": "entity:document:reportingEntityUrl",
+                  "localName": "document:reportingEntityUrl",
+                  "displayName": "entity:document:reportingEntityUrl",
+                  "queryName": "entity:document:reportingEntityUrl",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:protectedBy": {
+                  "id": "entity:document:protectedBy",
+                  "localName": "document:protectedBy",
+                  "displayName": "entity:document:protectedBy",
+                  "queryName": "entity:document:protectedBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:referenceAdministrative": {
+                  "id": "entity:referenceAdministrative",
+                  "localName": "referenceAdministrative",
+                  "displayName": "entity:referenceAdministrative",
+                  "queryName": "entity:referenceAdministrative",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": ""
+                },
+                "entity:document:reference": {
+                  "id": "entity:document:reference",
+                  "localName": "document:reference",
+                  "displayName": "DEPRECATED - Use entity:reference - Reference of the related document\n\t\t\t\t\t",
+                  "queryName": "entity:document:reference",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:datevalidity": {
+                  "id": "entity:document:datevalidity",
+                  "localName": "document:datevalidity",
+                  "displayName": "entity:document:datevalidity",
+                  "queryName": "entity:document:datevalidity",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "reference": "recevabilite",
+        "libelle": {
+          "value": "Accusé de réception"
+        },
+        "modeTransmission": "DEPOSEE",
+        "fonction": "recevabilite",
+        "obligatoire": false
+      },
+      {
+        "reference": "demandecomplement",
+        "libelle": {
+          "value": "Demande de complément"
+        },
+        "description": {
+          "value": "Demande de complément sur les pièces d'un dossier"
+        },
+        "modeTransmission": "DEPOSEE",
+        "fonction": "editions",
+        "obligatoire": false
+      },
+      {
+        "reference": "recapitulatif",
+        "libelle": {
+          "value": "Récapitulatif de la demande"
+        },
+        "commentaire": {
+          "value": ""
+        },
+        "description": {
+          "value": ""
+        },
+        "modeTransmission": "DEPOSEE",
+        "fonction": "recapitulatif",
+        "obligatoire": false,
+        "documents": [
+          {
+            "href": "/document-collect/test/root?objectId=9009b79a-6c01-4641-a262-33f504d53e60;1.0&cmisselector=object",
+            "id": "/document-collect/test/root?objectId=9009b79a-6c01-4641-a262-33f504d53e60;1.0",
+            "title": "recapitulatif",
+            "expand": {
+              "properties": {
+                "alfcmis:nodeRef": {
+                  "id": "alfcmis:nodeRef",
+                  "localName": "nodeRef",
+                  "displayName": "Alfresco Node Ref",
+                  "queryName": "alfcmis:nodeRef",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "workspace://SpacesStore/9009b79a-6c01-4641-a262-33f504d53e60"
+                },
+                "cmis:isImmutable": {
+                  "id": "cmis:isImmutable",
+                  "localName": "isImmutable",
+                  "displayName": "Is Immutable",
+                  "queryName": "cmis:isImmutable",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": false
+                },
+                "cmis:versionLabel": {
+                  "id": "cmis:versionLabel",
+                  "localName": "versionLabel",
+                  "displayName": "Version Label",
+                  "queryName": "cmis:versionLabel",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "1.0"
+                },
+                "cmis:objectTypeId": {
+                  "id": "cmis:objectTypeId",
+                  "localName": "objectTypeId",
+                  "displayName": "Object Type Id",
+                  "queryName": "cmis:objectTypeId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "cmis:document"
+                },
+                "cmis:description": {
+                  "id": "cmis:description",
+                  "localName": "description",
+                  "displayName": "Description",
+                  "queryName": "cmis:description",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "recapitulatif_depot_TELE_TEST.pdf"
+                },
+                "cmis:createdBy": {
+                  "id": "cmis:createdBy",
+                  "localName": "createdBy",
+                  "displayName": "Created by",
+                  "queryName": "cmis:createdBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "admin"
+                },
+                "cmis:checkinComment": {
+                  "id": "cmis:checkinComment",
+                  "localName": "checkinComment",
+                  "displayName": "Checkin Comment",
+                  "queryName": "cmis:checkinComment",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "Initial Version"
+                },
+                "cmis:creationDate": {
+                  "id": "cmis:creationDate",
+                  "localName": "creationDate",
+                  "displayName": "Creation Date",
+                  "queryName": "cmis:creationDate",
+                  "type": "datetime",
+                  "cardinality": "single",
+                  "value": 1701935478553
+                },
+                "cmis:isMajorVersion": {
+                  "id": "cmis:isMajorVersion",
+                  "localName": "isMajorVersion",
+                  "displayName": "Is Major Version",
+                  "queryName": "cmis:isMajorVersion",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": true
+                },
+                "cmis:contentStreamFileName": {
+                  "id": "cmis:contentStreamFileName",
+                  "localName": "contentStreamFileName",
+                  "displayName": "Content Stream Filename",
+                  "queryName": "cmis:contentStreamFileName",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "1701935472275-recapitulatif_depot_TELE_TEST.pdf"
+                },
+                "cmis:name": {
+                  "id": "cmis:name",
+                  "localName": "name",
+                  "displayName": "Name",
+                  "queryName": "cmis:name",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "1701935472275-recapitulatif_depot_TELE_TEST.pdf"
+                },
+                "cmis:isLatestVersion": {
+                  "id": "cmis:isLatestVersion",
+                  "localName": "isLatestVersion",
+                  "displayName": "Is Latest Version",
+                  "queryName": "cmis:isLatestVersion",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": true
+                },
+                "cmis:lastModificationDate": {
+                  "id": "cmis:lastModificationDate",
+                  "localName": "lastModificationDate",
+                  "displayName": "Last Modified Date",
+                  "queryName": "cmis:lastModificationDate",
+                  "type": "datetime",
+                  "cardinality": "single",
+                  "value": 1701935478553
+                },
+                "cmis:contentStreamLength": {
+                  "id": "cmis:contentStreamLength",
+                  "localName": "contentStreamLength",
+                  "displayName": "Content Stream Length",
+                  "queryName": "cmis:contentStreamLength",
+                  "type": "integer",
+                  "cardinality": "single",
+                  "value": 48804
+                },
+                "cmis:objectId": {
+                  "id": "cmis:objectId",
+                  "localName": "objectId",
+                  "displayName": "Object Id",
+                  "queryName": "cmis:objectId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "9009b79a-6c01-4641-a262-33f504d53e60;1.0"
+                },
+                "cmis:lastModifiedBy": {
+                  "id": "cmis:lastModifiedBy",
+                  "localName": "lastModifiedBy",
+                  "displayName": "Last Modified By",
+                  "queryName": "cmis:lastModifiedBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "admin"
+                },
+                "cmis:secondaryObjectTypeIds": {
+                  "id": "cmis:secondaryObjectTypeIds",
+                  "localName": "secondaryObjectTypeIds",
+                  "displayName": "Secondary Object Type Ids",
+                  "queryName": "cmis:secondaryObjectTypeIds",
+                  "type": "id",
+                  "cardinality": "multi",
+                  "value": [
+                    "P:entity:metadata",
+                    "P:cm:titled",
+                    "P:sys:localized"
+                  ]
+                },
+                "cmis:contentStreamId": {
+                  "id": "cmis:contentStreamId",
+                  "localName": "contentStreamId",
+                  "displayName": "Content Stream Id",
+                  "queryName": "cmis:contentStreamId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "store://2023/12/7/7/51/901f22e2-3693-4717-bb94-d2a93e6431f7.bin"
+                },
+                "cmis:contentStreamMimeType": {
+                  "id": "cmis:contentStreamMimeType",
+                  "localName": "contentStreamMimeType",
+                  "displayName": "Content Stream MIME Type",
+                  "queryName": "cmis:contentStreamMimeType",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "application/pdf"
+                },
+                "cmis:baseTypeId": {
+                  "id": "cmis:baseTypeId",
+                  "localName": "baseTypeId",
+                  "displayName": "Base Type Id",
+                  "queryName": "cmis:baseTypeId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "cmis:document"
+                },
+                "cmis:changeToken": {
+                  "id": "cmis:changeToken",
+                  "localName": "changeToken",
+                  "displayName": "Change token",
+                  "queryName": "cmis:changeToken",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cmis:isPrivateWorkingCopy": {
+                  "id": "cmis:isPrivateWorkingCopy",
+                  "localName": "isPrivateWorkingCopy",
+                  "displayName": "Is private working copy",
+                  "queryName": "cmis:isPrivateWorkingCopy",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": false
+                },
+                "cmis:versionSeriesCheckedOutBy": {
+                  "id": "cmis:versionSeriesCheckedOutBy",
+                  "localName": "versionSeriesCheckedOutBy",
+                  "displayName": "Version Series Checked Out By",
+                  "queryName": "cmis:versionSeriesCheckedOutBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cmis:isVersionSeriesCheckedOut": {
+                  "id": "cmis:isVersionSeriesCheckedOut",
+                  "localName": "isVersionSeriesCheckedOut",
+                  "displayName": "Is Version Series Checked Out",
+                  "queryName": "cmis:isVersionSeriesCheckedOut",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": false
+                },
+                "cmis:versionSeriesId": {
+                  "id": "cmis:versionSeriesId",
+                  "localName": "versionSeriesId",
+                  "displayName": "Version series id",
+                  "queryName": "cmis:versionSeriesId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": "9009b79a-6c01-4641-a262-33f504d53e60"
+                },
+                "cmis:isLatestMajorVersion": {
+                  "id": "cmis:isLatestMajorVersion",
+                  "localName": "isLatestMajorVersion",
+                  "displayName": "Is Latest Major Version",
+                  "queryName": "cmis:isLatestMajorVersion",
+                  "type": "boolean",
+                  "cardinality": "single",
+                  "value": true
+                },
+                "cmis:versionSeriesCheckedOutId": {
+                  "id": "cmis:versionSeriesCheckedOutId",
+                  "localName": "versionSeriesCheckedOutId",
+                  "displayName": "Version Series Checked Out Id",
+                  "queryName": "cmis:versionSeriesCheckedOutId",
+                  "type": "id",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:category": {
+                  "id": "entity:category",
+                  "localName": "category",
+                  "displayName": "DEPRECATED: use entity:document:category instead",
+                  "queryName": "entity:category",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "recapitulatif"
+                },
+                "entity:document:date": {
+                  "id": "entity:document:date",
+                  "localName": "document:date",
+                  "displayName": "entity:document:date",
+                  "queryName": "entity:document:date",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:originalfilename": {
+                  "id": "entity:originalfilename",
+                  "localName": "originalfilename",
+                  "displayName": "DEPRECATED: use entity:document:originalfilname instead\n\t\t\t\t\t",
+                  "queryName": "entity:originalfilename",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:category": {
+                  "id": "entity:document:category",
+                  "localName": "document:category",
+                  "displayName": "entity:document:category",
+                  "queryName": "entity:document:category",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "recapitulatif"
+                },
+                "entity:author": {
+                  "id": "entity:author",
+                  "localName": "author",
+                  "displayName": "entity:author",
+                  "queryName": "entity:author",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "MGDIS Projet"
+                },
+                "entity:document:generatedBy": {
+                  "id": "entity:document:generatedBy",
+                  "localName": "document:generatedBy",
+                  "displayName": "entity:document:generatedBy",
+                  "queryName": "entity:document:generatedBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:reference": {
+                  "id": "entity:reference",
+                  "localName": "reference",
+                  "displayName": "entity:reference",
+                  "queryName": "entity:reference",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "RebO9u38b"
+                },
+                "entity:document:formsCommonValues": {
+                  "id": "entity:document:formsCommonValues",
+                  "localName": "document:formsCommonValues",
+                  "displayName": "entity:document:formsCommonValues",
+                  "queryName": "entity:document:formsCommonValues",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:signature:status": {
+                  "id": "entity:signature:status",
+                  "localName": "signature:status",
+                  "displayName": "entity:signature:status",
+                  "queryName": "entity:signature:status",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:uri": {
+                  "id": "entity:uri",
+                  "localName": "uri",
+                  "displayName": "entity:uri",
+                  "queryName": "entity:uri",
+                  "type": "string",
+                  "cardinality": "single"
+                },
+                "entity:document:nature": {
+                  "id": "entity:document:nature",
+                  "localName": "document:nature",
+                  "displayName": "entity:document:nature",
+                  "queryName": "entity:document:nature",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": ""
+                },
+                "entity:kind": {
+                  "id": "entity:kind",
+                  "localName": "kind",
+                  "displayName": "entity:kind",
+                  "queryName": "entity:kind",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "aide"
+                },
+                "entity:origin": {
+                  "id": "entity:origin",
+                  "localName": "origin",
+                  "displayName": "entity:origin",
+                  "queryName": "entity:origin",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:originalfilename": {
+                  "id": "entity:document:originalfilename",
+                  "localName": "document:originalfilename",
+                  "displayName": "entity:document:originalfilename",
+                  "queryName": "entity:document:originalfilename",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "recapitulatif_depot_TELE_TEST.pdf"
+                },
+                "entity:authorId": {
+                  "id": "entity:authorId",
+                  "localName": "authorId",
+                  "displayName": "entity:authorId",
+                  "queryName": "entity:authorId",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "/account-management/test-agents/users/mgdis-projet"
+                },
+                "entity:document:fonction": {
+                  "id": "entity:document:fonction",
+                  "localName": "document:fonction",
+                  "displayName": "entity:document:fonction",
+                  "queryName": "entity:document:fonction",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:originalId": {
+                  "id": "entity:originalId",
+                  "localName": "originalId",
+                  "displayName": "entity:originalId",
+                  "queryName": "entity:originalId",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:reportingEntityUrl": {
+                  "id": "entity:document:reportingEntityUrl",
+                  "localName": "document:reportingEntityUrl",
+                  "displayName": "entity:document:reportingEntityUrl",
+                  "queryName": "entity:document:reportingEntityUrl",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:protectedBy": {
+                  "id": "entity:document:protectedBy",
+                  "localName": "document:protectedBy",
+                  "displayName": "entity:document:protectedBy",
+                  "queryName": "entity:document:protectedBy",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:referenceAdministrative": {
+                  "id": "entity:referenceAdministrative",
+                  "localName": "referenceAdministrative",
+                  "displayName": "entity:referenceAdministrative",
+                  "queryName": "entity:referenceAdministrative",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "00000001"
+                },
+                "entity:document:reference": {
+                  "id": "entity:document:reference",
+                  "localName": "document:reference",
+                  "displayName": "DEPRECATED - Use entity:reference - Reference of the related document\n\t\t\t\t\t",
+                  "queryName": "entity:document:reference",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "entity:document:datevalidity": {
+                  "id": "entity:document:datevalidity",
+                  "localName": "document:datevalidity",
+                  "displayName": "entity:document:datevalidity",
+                  "queryName": "entity:document:datevalidity",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cm:title": {
+                  "id": "cm:title",
+                  "localName": "title",
+                  "displayName": "Title",
+                  "queryName": "cm:title",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": null
+                },
+                "cm:description": {
+                  "id": "cm:description",
+                  "localName": "description",
+                  "displayName": "Description",
+                  "queryName": "cm:description",
+                  "type": "string",
+                  "cardinality": "single",
+                  "value": "recapitulatif_depot_TELE_TEST.pdf"
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "domiciliationBancaire": {
+      "pieces": [
+        {
+          "reference": "rib",
+          "libelle": {
+            "value": "Relevé d'Identité Bancaire"
+          },
+          "description": {
+            "value": ""
+          },
+          "modeTransmission": "DEPOSEE",
+          "fonction": "depot",
+          "obligatoire": true,
+          "documents": [
+            {
+              "id": "/document-collect/test/root?objectId=44744cb6-a859-4c3a-94ab-2bf5ef87133d;1.0",
+              "href": "/document-collect/test/root?objectId=44744cb6-a859-4c3a-94ab-2bf5ef87133d;1.0&cmisselector=object",
+              "title": "word-template.docx",
+              "rel": "cmis",
+              "expand": {
+                "properties": {
+                  "alfcmis:nodeRef": {
+                    "id": "alfcmis:nodeRef",
+                    "localName": "nodeRef",
+                    "displayName": "Alfresco Node Ref",
+                    "queryName": "alfcmis:nodeRef",
+                    "type": "id",
+                    "cardinality": "single",
+                    "value": "workspace://SpacesStore/44744cb6-a859-4c3a-94ab-2bf5ef87133d"
+                  },
+                  "cmis:isImmutable": {
+                    "id": "cmis:isImmutable",
+                    "localName": "isImmutable",
+                    "displayName": "Is Immutable",
+                    "queryName": "cmis:isImmutable",
+                    "type": "boolean",
+                    "cardinality": "single",
+                    "value": false
+                  },
+                  "cmis:versionLabel": {
+                    "id": "cmis:versionLabel",
+                    "localName": "versionLabel",
+                    "displayName": "Version Label",
+                    "queryName": "cmis:versionLabel",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "1.0"
+                  },
+                  "cmis:objectTypeId": {
+                    "id": "cmis:objectTypeId",
+                    "localName": "objectTypeId",
+                    "displayName": "Object Type Id",
+                    "queryName": "cmis:objectTypeId",
+                    "type": "id",
+                    "cardinality": "single",
+                    "value": "cmis:document"
+                  },
+                  "cmis:description": {
+                    "id": "cmis:description",
+                    "localName": "description",
+                    "displayName": "Description",
+                    "queryName": "cmis:description",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "Mon template word. On peut avoir que un seul document"
+                  },
+                  "cmis:createdBy": {
+                    "id": "cmis:createdBy",
+                    "localName": "createdBy",
+                    "displayName": "Created by",
+                    "queryName": "cmis:createdBy",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "admin"
+                  },
+                  "cmis:checkinComment": {
+                    "id": "cmis:checkinComment",
+                    "localName": "checkinComment",
+                    "displayName": "Checkin Comment",
+                    "queryName": "cmis:checkinComment",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "Initial Version"
+                  },
+                  "cmis:creationDate": {
+                    "id": "cmis:creationDate",
+                    "localName": "creationDate",
+                    "displayName": "Creation Date",
+                    "queryName": "cmis:creationDate",
+                    "type": "datetime",
+                    "cardinality": "single",
+                    "value": 1701935264451
+                  },
+                  "cmis:isMajorVersion": {
+                    "id": "cmis:isMajorVersion",
+                    "localName": "isMajorVersion",
+                    "displayName": "Is Major Version",
+                    "queryName": "cmis:isMajorVersion",
+                    "type": "boolean",
+                    "cardinality": "single",
+                    "value": true
+                  },
+                  "cmis:contentStreamFileName": {
+                    "id": "cmis:contentStreamFileName",
+                    "localName": "contentStreamFileName",
+                    "displayName": "Content Stream Filename",
+                    "queryName": "cmis:contentStreamFileName",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "6494a275-2b7a-4f7a-89fc-ed37a03097ce_word-template.docx"
+                  },
+                  "cmis:name": {
+                    "id": "cmis:name",
+                    "localName": "name",
+                    "displayName": "Name",
+                    "queryName": "cmis:name",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "6494a275-2b7a-4f7a-89fc-ed37a03097ce_word-template.docx"
+                  },
+                  "cmis:isLatestVersion": {
+                    "id": "cmis:isLatestVersion",
+                    "localName": "isLatestVersion",
+                    "displayName": "Is Latest Version",
+                    "queryName": "cmis:isLatestVersion",
+                    "type": "boolean",
+                    "cardinality": "single",
+                    "value": true
+                  },
+                  "cmis:lastModificationDate": {
+                    "id": "cmis:lastModificationDate",
+                    "localName": "lastModificationDate",
+                    "displayName": "Last Modified Date",
+                    "queryName": "cmis:lastModificationDate",
+                    "type": "datetime",
+                    "cardinality": "single",
+                    "value": 1701935282901
+                  },
+                  "cmis:contentStreamLength": {
+                    "id": "cmis:contentStreamLength",
+                    "localName": "contentStreamLength",
+                    "displayName": "Content Stream Length",
+                    "queryName": "cmis:contentStreamLength",
+                    "type": "integer",
+                    "cardinality": "single",
+                    "value": 19340
+                  },
+                  "cmis:objectId": {
+                    "id": "cmis:objectId",
+                    "localName": "objectId",
+                    "displayName": "Object Id",
+                    "queryName": "cmis:objectId",
+                    "type": "id",
+                    "cardinality": "single",
+                    "value": "44744cb6-a859-4c3a-94ab-2bf5ef87133d;1.0"
+                  },
+                  "cmis:lastModifiedBy": {
+                    "id": "cmis:lastModifiedBy",
+                    "localName": "lastModifiedBy",
+                    "displayName": "Last Modified By",
+                    "queryName": "cmis:lastModifiedBy",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "admin"
+                  },
+                  "cmis:secondaryObjectTypeIds": {
+                    "id": "cmis:secondaryObjectTypeIds",
+                    "localName": "secondaryObjectTypeIds",
+                    "displayName": "Secondary Object Type Ids",
+                    "queryName": "cmis:secondaryObjectTypeIds",
+                    "type": "id",
+                    "cardinality": "multi",
+                    "value": [
+                      "P:entity:metadata",
+                      "P:cm:titled",
+                      "P:sys:localized"
+                    ]
+                  },
+                  "cmis:contentStreamId": {
+                    "id": "cmis:contentStreamId",
+                    "localName": "contentStreamId",
+                    "displayName": "Content Stream Id",
+                    "queryName": "cmis:contentStreamId",
+                    "type": "id",
+                    "cardinality": "single",
+                    "value": "store://2023/12/7/7/47/c56aaedd-e219-4f9a-a5ac-a0a0c889bf3b.bin"
+                  },
+                  "cmis:contentStreamMimeType": {
+                    "id": "cmis:contentStreamMimeType",
+                    "localName": "contentStreamMimeType",
+                    "displayName": "Content Stream MIME Type",
+                    "queryName": "cmis:contentStreamMimeType",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                  },
+                  "cmis:baseTypeId": {
+                    "id": "cmis:baseTypeId",
+                    "localName": "baseTypeId",
+                    "displayName": "Base Type Id",
+                    "queryName": "cmis:baseTypeId",
+                    "type": "id",
+                    "cardinality": "single",
+                    "value": "cmis:document"
+                  },
+                  "cmis:changeToken": {
+                    "id": "cmis:changeToken",
+                    "localName": "changeToken",
+                    "displayName": "Change token",
+                    "queryName": "cmis:changeToken",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "cmis:isPrivateWorkingCopy": {
+                    "id": "cmis:isPrivateWorkingCopy",
+                    "localName": "isPrivateWorkingCopy",
+                    "displayName": "Is private working copy",
+                    "queryName": "cmis:isPrivateWorkingCopy",
+                    "type": "boolean",
+                    "cardinality": "single",
+                    "value": false
+                  },
+                  "cmis:versionSeriesCheckedOutBy": {
+                    "id": "cmis:versionSeriesCheckedOutBy",
+                    "localName": "versionSeriesCheckedOutBy",
+                    "displayName": "Version Series Checked Out By",
+                    "queryName": "cmis:versionSeriesCheckedOutBy",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "cmis:isVersionSeriesCheckedOut": {
+                    "id": "cmis:isVersionSeriesCheckedOut",
+                    "localName": "isVersionSeriesCheckedOut",
+                    "displayName": "Is Version Series Checked Out",
+                    "queryName": "cmis:isVersionSeriesCheckedOut",
+                    "type": "boolean",
+                    "cardinality": "single",
+                    "value": false
+                  },
+                  "cmis:versionSeriesId": {
+                    "id": "cmis:versionSeriesId",
+                    "localName": "versionSeriesId",
+                    "displayName": "Version series id",
+                    "queryName": "cmis:versionSeriesId",
+                    "type": "id",
+                    "cardinality": "single",
+                    "value": "44744cb6-a859-4c3a-94ab-2bf5ef87133d"
+                  },
+                  "cmis:isLatestMajorVersion": {
+                    "id": "cmis:isLatestMajorVersion",
+                    "localName": "isLatestMajorVersion",
+                    "displayName": "Is Latest Major Version",
+                    "queryName": "cmis:isLatestMajorVersion",
+                    "type": "boolean",
+                    "cardinality": "single",
+                    "value": true
+                  },
+                  "cmis:versionSeriesCheckedOutId": {
+                    "id": "cmis:versionSeriesCheckedOutId",
+                    "localName": "versionSeriesCheckedOutId",
+                    "displayName": "Version Series Checked Out Id",
+                    "queryName": "cmis:versionSeriesCheckedOutId",
+                    "type": "id",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "entity:category": {
+                    "id": "entity:category",
+                    "localName": "category",
+                    "displayName": "DEPRECATED: use entity:document:category instead",
+                    "queryName": "entity:category",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "rib"
+                  },
+                  "entity:document:date": {
+                    "id": "entity:document:date",
+                    "localName": "document:date",
+                    "displayName": "entity:document:date",
+                    "queryName": "entity:document:date",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "2023-12-07T07:47:43.564Z"
+                  },
+                  "entity:originalfilename": {
+                    "id": "entity:originalfilename",
+                    "localName": "originalfilename",
+                    "displayName": "DEPRECATED: use entity:document:originalfilname instead\n\t\t\t\t\t",
+                    "queryName": "entity:originalfilename",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "word-template.docx"
+                  },
+                  "entity:document:category": {
+                    "id": "entity:document:category",
+                    "localName": "document:category",
+                    "displayName": "entity:document:category",
+                    "queryName": "entity:document:category",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "rib"
+                  },
+                  "entity:author": {
+                    "id": "entity:author",
+                    "localName": "author",
+                    "displayName": "entity:author",
+                    "queryName": "entity:author",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "John Doe"
+                  },
+                  "entity:document:generatedBy": {
+                    "id": "entity:document:generatedBy",
+                    "localName": "document:generatedBy",
+                    "displayName": "entity:document:generatedBy",
+                    "queryName": "entity:document:generatedBy",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "entity:reference": {
+                    "id": "entity:reference",
+                    "localName": "reference",
+                    "displayName": "entity:reference",
+                    "queryName": "entity:reference",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "RebO9u38b"
+                  },
+                  "entity:document:formsCommonValues": {
+                    "id": "entity:document:formsCommonValues",
+                    "localName": "document:formsCommonValues",
+                    "displayName": "entity:document:formsCommonValues",
+                    "queryName": "entity:document:formsCommonValues",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "entity:signature:status": {
+                    "id": "entity:signature:status",
+                    "localName": "signature:status",
+                    "displayName": "entity:signature:status",
+                    "queryName": "entity:signature:status",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "entity:uri": {
+                    "id": "entity:uri",
+                    "localName": "uri",
+                    "displayName": "entity:uri",
+                    "queryName": "entity:uri",
+                    "type": "string",
+                    "cardinality": "single"
+                  },
+                  "entity:document:nature": {
+                    "id": "entity:document:nature",
+                    "localName": "document:nature",
+                    "displayName": "entity:document:nature",
+                    "queryName": "entity:document:nature",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": ""
+                  },
+                  "entity:kind": {
+                    "id": "entity:kind",
+                    "localName": "kind",
+                    "displayName": "entity:kind",
+                    "queryName": "entity:kind",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "aide"
+                  },
+                  "entity:origin": {
+                    "id": "entity:origin",
+                    "localName": "origin",
+                    "displayName": "entity:origin",
+                    "queryName": "entity:origin",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "entity:document:originalfilename": {
+                    "id": "entity:document:originalfilename",
+                    "localName": "document:originalfilename",
+                    "displayName": "entity:document:originalfilename",
+                    "queryName": "entity:document:originalfilename",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "word-template.docx"
+                  },
+                  "entity:authorId": {
+                    "id": "entity:authorId",
+                    "localName": "authorId",
+                    "displayName": "entity:authorId",
+                    "queryName": "entity:authorId",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "/account-management/test-demandeurs/users/john-d"
+                  },
+                  "entity:document:fonction": {
+                    "id": "entity:document:fonction",
+                    "localName": "document:fonction",
+                    "displayName": "entity:document:fonction",
+                    "queryName": "entity:document:fonction",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "entity:originalId": {
+                    "id": "entity:originalId",
+                    "localName": "originalId",
+                    "displayName": "entity:originalId",
+                    "queryName": "entity:originalId",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "entity:document:reportingEntityUrl": {
+                    "id": "entity:document:reportingEntityUrl",
+                    "localName": "document:reportingEntityUrl",
+                    "displayName": "entity:document:reportingEntityUrl",
+                    "queryName": "entity:document:reportingEntityUrl",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "entity:document:protectedBy": {
+                    "id": "entity:document:protectedBy",
+                    "localName": "document:protectedBy",
+                    "displayName": "entity:document:protectedBy",
+                    "queryName": "entity:document:protectedBy",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "entity:referenceAdministrative": {
+                    "id": "entity:referenceAdministrative",
+                    "localName": "referenceAdministrative",
+                    "displayName": "entity:referenceAdministrative",
+                    "queryName": "entity:referenceAdministrative",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": ""
+                  },
+                  "entity:document:reference": {
+                    "id": "entity:document:reference",
+                    "localName": "document:reference",
+                    "displayName": "DEPRECATED - Use entity:reference - Reference of the related document\n\t\t\t\t\t",
+                    "queryName": "entity:document:reference",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "entity:document:datevalidity": {
+                    "id": "entity:document:datevalidity",
+                    "localName": "document:datevalidity",
+                    "displayName": "entity:document:datevalidity",
+                    "queryName": "entity:document:datevalidity",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "cm:title": {
+                    "id": "cm:title",
+                    "localName": "title",
+                    "displayName": "Title",
+                    "queryName": "cm:title",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": null
+                  },
+                  "cm:description": {
+                    "id": "cm:description",
+                    "localName": "description",
+                    "displayName": "Description",
+                    "queryName": "cm:description",
+                    "type": "string",
+                    "cardinality": "single",
+                    "value": "Template word"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
