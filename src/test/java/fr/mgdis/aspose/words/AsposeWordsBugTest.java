@@ -124,6 +124,14 @@ class AsposeWordsBugTest {
       try (InputStream template = new FileInputStream("src/test/resources/templates/template_03.docx")) {
         var document = asposeWordsBuilder.buildDocument(template, new DataSourceRoot(transformedDatasets));
         assertNotNull(document);
+
+        try (PDDocument pdfDocument = PDDocument.load(document.toByteArray())) {
+          PDFTextStripper stripper = new PDFTextStripper();
+          String text = stripper.getText(pdfDocument);
+
+          // Check content
+          assertTrue(text.contains("«  » \" Fiche d’identité CFA (indicateurs annuels)"));
+        }
       }
     }
   }
