@@ -48,6 +48,11 @@
       <artifactId>json</artifactId>
       <version>20231013</version>
     </dependency>
+    <dependency>
+      <groupId>joda-time</groupId>
+      <artifactId>joda-time</artifactId>
+      <version>2.12.2</version>
+    </dependency>
 
     <!-- Aspose Words -->
     <dependency>

@@ -4,7 +4,10 @@ import com.aspose.words.DocumentBuilder;
 import com.aspose.words.FieldMergingArgs;
 import com.aspose.words.IFieldMergingCallback;
 import com.aspose.words.ImageFieldMergingArgs;
+import io.quarkus.logging.Log;
+import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
+import org.joda.time.DateTime;
 
 /**
  * Override field merging to enable html text in merge field
@@ -29,6 +32,10 @@ public class HandleMergeFields implements IFieldMergingCallback {
     // Check other "null" value
     if (fieldMergingArgs.getFieldValue() != null && fieldMergingArgs.getFieldValue().equals("null")) {
       fieldMergingArgs.setText("");
+    }
+    // Check if merge field contains a "\date" flag
+    if (fieldMergingArgs.getField().getFieldCode().contains("\\date")) {
+      processDateFlag(fieldMergingArgs);
     }
   }
 
@@ -64,6 +71,35 @@ public class HandleMergeFields implements IFieldMergingCallback {
 
     // Remove the string representation of HTML
     e.setText(StringUtils.EMPTY);
+  }
+
+  private void processDateFlag(FieldMergingArgs e) throws Exception {
+    // Create document builder
+    DocumentBuilder builder = new DocumentBuilder(e.getDocument());
+
+    // Move cursor to field
+    builder.moveToField(e.getField(), true);
+    if (e.getFieldValue() != null) {
+      // Split and parse to get the \date:yyyy-MM-dd
+      String fieldCode = e.getField().getFieldCode();
+      String format = StringUtils.EMPTY;
+      if (fieldCode.contains("\\date:[")) {
+        format = fieldCode.substring(fieldCode.indexOf("[") + 1, fieldCode.indexOf("]"));
+      }
+
+      // Get the date
+      String dateValue = e.getFieldValue().toString();
+      try {
+        DateTime dt = Pattern.matches("^[0-9]+$", dateValue)
+          ? new DateTime(Long.parseLong(dateValue))
+          : new DateTime(dateValue);
+        format = (format.equals(StringUtils.EMPTY)) ? "dd/MM/yyyy" : format;
+        e.setText(dt.toString(format));
+      } catch (Exception err) {
+        Log.error("HandleMergeFields - processDateFlag - \"" + e.getField().getFieldCode() + "\" error :" + err);
+        e.setText(StringUtils.EMPTY);
+      }
+    }
   }
 
   @Override
