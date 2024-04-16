@@ -2460,7 +2460,13 @@
             }
           ]
         }
-      ]
+      ],
+      "titulaire": "John DOE",
+      "IBAN": {
+        "numero": "FR7730003000405359159988A02",
+        "BIC": "AGRIFRPPXXX",
+        "domiciliation": "Crédit Agricole"
+      }
     }
   }
 }
