@@ -51,7 +51,7 @@ public class AsposeWordsBuilder {
    * @return List of blank pages
    * @throws Exception Exception
    */
-  private java.util.List<Integer> getNumberOfBlankPages(Document doc) throws Exception {
+  /* private java.util.List<Integer> getNumberOfBlankPages(Document doc) throws Exception {
     // Page numbers of blank pages
     List<Integer> blankPages = new ArrayList<>();
 
@@ -73,7 +73,7 @@ public class AsposeWordsBuilder {
     }
 
     return blankPages;
-  }
+  } */
 
   /**
    * Function that removes blank pages from document.
@@ -83,7 +83,7 @@ public class AsposeWordsBuilder {
    *
    * @param doc Document to analyze
    */
-  private void removeBlankPages(Document doc, List<Integer> blankPages) throws Exception {
+  /* private void removeBlankPages(Document doc, List<Integer> blankPages) throws Exception {
     // LayoutCollector is a class that allows you to transform the flow of a Word document into a document with a fixed page.
     LayoutCollector layoutCollector = new LayoutCollector(doc);
 
@@ -100,7 +100,7 @@ public class AsposeWordsBuilder {
     for (Node node : list) {
       node.remove();
     }
-  }
+  } */
 
   /**
    * Build document with Aspose Words
@@ -128,7 +128,7 @@ public class AsposeWordsBuilder {
     // Add callback to enable html text in merge field
     // (http://www.aspose.com/community/forums/thread/380671/html-text-with-merge-field.aspx)
     mailMerge.setMergeDuplicateRegions(true);
-    mailMerge.setRestartListsAtEachSection(true);
+    // mailMerge.setRestartListsAtEachSection(true);
     mailMerge.setFieldMergingCallback(new HandleMergeFields());
 
     // Authorize mustache syntax in word template
@@ -151,16 +151,16 @@ public class AsposeWordsBuilder {
     removeEmptySectionsAndParagraphs(doc);
 
     // Check if document has blank pages
-    var blankPages = getNumberOfBlankPages(doc);
-    Log.debug("[AsposeWordsBuilder] - Is that document contains blank pages : " + !blankPages.isEmpty());
+    // var blankPages = getNumberOfBlankPages(doc);
+    // Log.debug("[AsposeWordsBuilder] - Is that document contains blank pages : " + !blankPages.isEmpty());
 
     // Remove blank pages of our document
-    if (!blankPages.isEmpty()) {
+    /* if (!blankPages.isEmpty()) {
       var numberOfBlankPages = blankPages.stream().map(Object::toString).collect(Collectors.joining(","));
       Log.debug("[AsposeWordsBuilder] - Blank pages number in the document : " + numberOfBlankPages);
       removeBlankPages(doc, blankPages);
       Log.debug("[AsposeWordsBuilder] - Blank pages removed from the document");
-    }
+    } */
 
     doc.updateFields();
 

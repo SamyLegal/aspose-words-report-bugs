@@ -1,7 +1,6 @@
 package fr.mgdis.aspose.words;
 
 import com.aspose.words.IMailMergeDataSource;
-import com.aspose.words.ref.Ref;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -62,13 +61,13 @@ public class JSONMailMergeDataSource implements IMailMergeDataSource {
   }
 
   @Override
-  public boolean getValue(String fieldName, Ref<Object> fieldValue) {
+  public boolean getValue(String fieldName, Object[] fieldValue) {
     // The current JsonNode not exists
     if (currentJsonNode == null) return false;
 
     // When iterating over an array of simple values, return the value whatever the given field name
     if (!currentJsonNode.isObject() && !currentJsonNode.isArray()) {
-      fieldValue.set(currentJsonNode.asText());
+      fieldValue[0] = currentJsonNode.asText();
       return true;
     }
 
@@ -85,9 +84,9 @@ public class JSONMailMergeDataSource implements IMailMergeDataSource {
       for (JsonNode jsonNode : child) {
         items.add(jsonNode.asText());
       }
-      fieldValue.set(items);
+      fieldValue[0] = items;
     } else {
-      fieldValue.set(child.asText());
+      fieldValue[0] = child.asText();
     }
 
     return true;

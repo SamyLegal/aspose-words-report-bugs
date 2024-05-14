@@ -58,8 +58,7 @@
     <dependency>
       <groupId>com.aspose</groupId>
       <artifactId>aspose-words</artifactId>
-      <version>24.3</version>
-      <classifier>jdk17</classifier>
+      <version>14.4</version>
     </dependency>
 
     <!-- Test -->
@@ -89,6 +88,29 @@
 
   <build>
     <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-install-plugin</artifactId>
+        <version>3.1.1</version>
+        <configuration>
+          <groupId>com.aspose</groupId>
+          <artifactId>aspose-words</artifactId>
+          <version>14.4</version>
+          <packaging>jar</packaging>
+          <file>${basedir}/dependencies/aspose-words-14.4.jar</file>
+          <generatePom>true</generatePom>
+        </configuration>
+        <executions>
+          <execution>
+            <id>install-jar-lib</id>
+            <goals>
+              <goal>install-file</goal>
+            </goals>
+            <phase>validate</phase>
+          </execution>
+        </executions>
+      </plugin>
+
       <plugin>
         <groupId>${quarkus.platform.group-id}</groupId>
         <artifactId>quarkus-maven-plugin</artifactId>

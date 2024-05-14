@@ -67,7 +67,7 @@ public class HandleMergeFields implements IFieldMergingCallback {
     builder.moveToField(e.getField(), true);
 
     // Insert HTML
-    builder.insertHtml(htmlValue, true);
+    builder.insertHtml(htmlValue/*, true */);
 
     // Remove the string representation of HTML
     e.setText(StringUtils.EMPTY);
